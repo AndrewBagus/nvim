@@ -69,6 +69,9 @@ keymap("n", "<A-/>", '<CMD>lua require("Comment.api").toggle_current_linewise()<
 keymap("x", "<A-/>", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
 
 -- Terminal --
+-- Floating Terminal Toggle --
+keymap("", "<A-\\>", "<CMD>ToggleTerm direction=float<CR>", opts)
+
 -- Better terminal navigation
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
