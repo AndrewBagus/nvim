@@ -112,6 +112,7 @@ local mappings = {
 		["x"] = { "<cmd>FlutterDetach<CR>", "Flutter Detach" },
 		["e"] = { "<cmd>FlutterEmulators<CR>", "Flutter Emulators" },
 		["S"] = { "<cmd>FlutterLspRestart<CR>", "Flutter Lsp Restart" },
+		["c"] = { "<cmd>FlutterLogClear<CR>", "Flutter Clear Dev Logs" },
 	},
 
 	p = {
@@ -211,6 +212,11 @@ local mappings = {
 		n = { "<cmd>lua require('harpoon.ui').nav_next()<CR>", "Harpoon Next" },
 		p = { "<cmd>lua require('harpoon.ui').nav_prev()<CR>", "Harpoon Previous" },
 		q = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", "Harpoon Quick Menu" },
+	},
+	n = {
+		name = "Tmux",
+		s = { "<cmd>Telescope tmux sessions<CR>", "Tmux Telescope Sessions" },
+		w = { "<cmd>Telescope tmux windows<CR>", "Tmux Telescope Windows" },
 	},
 }
 

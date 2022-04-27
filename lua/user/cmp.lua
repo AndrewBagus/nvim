@@ -11,7 +11,7 @@ luasnip.filetype_extend("php", { "codeigniter" })
 luasnip.filetype_extend("dart", { "flutter" })
 
 require("luasnip.loaders.from_vscode").load()
-require("luasnip.loaders.from_snipmate").load()
+-- require("luasnip.loaders.from_snipmate").load()
 
 local check_backspace = function()
 	local col = vim.fn.col(".") - 1
@@ -129,9 +129,9 @@ cmp.setup({
 		behavior = cmp.ConfirmBehavior.Replace,
 		select = false,
 	},
-	documentation = {
-		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-	},
+	-- documentation = {
+	-- 	border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+	-- },
 	experimental = {
 		ghost_text = false,
 		native_menu = false,

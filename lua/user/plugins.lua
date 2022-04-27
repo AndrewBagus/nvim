@@ -96,6 +96,7 @@ return require("packer").startup(function(use)
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-media-files.nvim")
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use("camgraff/telescope-tmux.nvim")
 
 	-- Treesitter
 	use({
@@ -121,6 +122,7 @@ return require("packer").startup(function(use)
 
 	-- Flutter tools
 	use("akinsho/flutter-tools.nvim")
+	use("AgrimV/hot-reload.vim")
 
 	-- Terminal show
 	use("akinsho/toggleterm.nvim")
@@ -145,6 +147,9 @@ return require("packer").startup(function(use)
 
 	-- Better wordmotion move
 	use("chaoren/vim-wordmotion")
+
+	-- Emmet
+	use("mattn/emmet-vim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

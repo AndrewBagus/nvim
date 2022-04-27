@@ -7,6 +7,7 @@ telescope.load_extension("fzf")
 telescope.load_extension("media_files")
 telescope.load_extension("flutter")
 telescope.load_extension("harpoon")
+telescope.load_extension("tmux")
 
 local actions = require("telescope.actions")
 local action_state = require("telescope.actions.state")

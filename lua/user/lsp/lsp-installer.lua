@@ -22,6 +22,10 @@ lsp_installer.on_server_ready(function(server)
 	end
 
 	if server.name == "emmet_ls" then
+		opts = {
+			-- on_attach = require("user.lsp.handlers").on_attach,
+			capabilities = require("user.lsp.handlers").capabilities,
+		}
 		local emmet_ls_opts = require("user.lsp.settings.emmet_ls")
 		opts = vim.tbl_deep_extend("force", emmet_ls_opts, opts)
 	end

@@ -13,10 +13,10 @@ null_ls.setup({
 	sources = {
 		formatting.prettier.with({
 			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
-			extra_filetypes = { "php" },
+			extra_filetypes = { "php", "blade" },
 		}),
 		formatting.black.with({ extra_args = { "--fast" } }),
-		-- formatting.phpcsfixer,
+		formatting.phpcbf,
 		formatting.stylua,
 		diagnostics.php,
 		diagnostics.eslint,
